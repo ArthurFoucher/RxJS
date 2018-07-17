@@ -52,7 +52,7 @@ How many virtual milliseconds one frame represents depends on the value of `Test
 
 - `' '` whitespace: horizontal whitespace is ignored, and can be used to help vertically align multiple marble diagrams.
 - `'-'` frame: 1 "frame" of virtual time passing (see above description of frames).
-- `[0-9]+[ms|s|m]` time progression: the time progression syntax lets you progress virtual time by a specific amount. It's a number, followed by a time unit of `ms` (milliseconds), `s` (seconds), or `m` (minutes) without any space between them, e.g. `a 10ms b`. See [Time progression syntax](#Time-progression-syntax) for more details.
+- `[0-9]+[ms|s|m]` time progression: the time progression syntax lets you progress virtual time by a specific amount. It's a number, followed by a time unit of `ms` (milliseconds), `s` (seconds), or `m` (minutes) without any space between them, e.g. `a 10ms b`. See [Time progression syntax](#time-progression-syntax) for more details.
 - `'|'` complete: The successful completion of an observable. This is the observable producer signaling `complete()`.
 - `'#'` error: An error terminating the observable. This is the observable producer signaling `error()`.
 - `[a-z0-9]` e.g. `'a'` any alphanumeric character: Represents a value being emitted by the producer signaling `next()`.
